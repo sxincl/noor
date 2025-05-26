@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>تهنئة تخرج نوران</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0; padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f7c1ff 0%, #b983ff 40%, #7f7fd5 100%);
+      font-family: 'Cairo', sans-serif;
+      overflow-x: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .main-card {
+      background: rgba(255, 246, 230, 0.96);
+      border-radius: 30px;
+      box-shadow: 0 8px 30px rgba(160, 101, 199, 0.18);
+      max-width: 480px;
+      width: 100%;
+      padding: 38px 36px 24px 36px;
+      position: relative;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-pic {
+      position: absolute;
+      top: -48px;
+      right: 32px;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 4px solid #fff6e6;
+      box-shadow: 0 4px 24px #a065c7aa;
+      object-fit: cover;
+      background: #fff;
+      z-index: 2;
+      transition: transform 0.3s;
+    }
+    .profile-pic:hover {
+      transform: scale(1.07) rotate(-2deg);
+      box-shadow: 0 8px 36px #a065c799;
+    }
+    .grad-cap-real {
+      width: 80px;
+      margin: 0 auto 12px auto;
+      display: block;
+      filter: drop-shadow(0 3px 10px #0002);
+    }
+    .graduate-name {
+      font-size: 2.1rem;
+      color: #4f2e6d;
+      font-weight: bold;
+      margin-bottom: 6px;
+      margin-top: 6px;
+      text-shadow: 1px 1px 8px #fff8, 0 1px 0 #fff;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+    .date {
+      font-size: 1.1rem;
+      color: #7a4e9c;
+      margin-bottom: 18px;
+      background: #f7e5ffbb;
+      padding: 6px 18px;
+      border-radius: 18px;
+      box-shadow: 0 2px 10px #b98fff22;
+      display: inline-block;
+    }
+    .congrats {
+      font-size: 1.25rem;
+      color: #fff;
+      background: linear-gradient(90deg, #a065c7 40%, #f7b6d2 100%);
+      padding: 18px 22px;
+      border-radius: 22px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 24px #a065c766;
+      letter-spacing: 1px;
+      animation: fadeIn 2s;
+      text-align: center;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0;}
+      to { opacity: 1;}
+    }
+    .flowers-emoji {
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      margin: 18px 0 0 0;
+      font-size: 2.3rem;
+      user-select: none;
+      pointer-events: none;
+      filter: drop-shadow(0 2px 8px #fff8);
+    }
+    .yt-video {
+      margin: 30px auto 0 auto;
+      display: flex;
+      justify-content: center;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 2px 24px #a065c744;
+      max-width: 100%;
+    }
+    .yt-video iframe {
+      width: 350px;
+      height: 200px;
+      max-width: 90vw;
+      border: none;
+      border-radius: 18px;
+    }
+    .fireworks {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      pointer-events: none;
+      z-index: 100;
+      opacity: 1;
+    }
+    @media (max-width: 600px) {
+      body { padding: 7px;}
+      .main-card { padding: 28px 7vw 14px 7vw; max-width: 99vw;}
+      .profile-pic { width: 70px; height: 70px; top: -38px; right: 12px;}
+      .grad-cap-real { width: 54px;}
+      .graduate-name { font-size: 1.15rem;}
+      .congrats { font-size: 1rem;}
+      .flowers-emoji { font-size: 1.2rem; gap: 7px;}
+      .yt-video iframe { width: 95vw; height: 54vw; min-height: 120px;}
+    }
+  </style>
+</head>
+<body>
+  <!-- ألعاب نارية -->
+  <canvas class="fireworks"></canvas>
+  <div class="main-card">
+    <!-- صورة التخرج الدائرية في الأعلى يمين البطاقة -->
+    <img class="profile-pic" src="C:\Users\aa0um\Downloads\نو\image.jpg.jpg" alt="صورة نوران" />
+    <!-- قبعة التخرج -->
+    <svg class="grad-cap-real" viewBox="0 0 220 140" fill="none" aria-label="قبعة تخرج">
+      <ellipse cx="110" cy="115" rx="52" ry="12" fill="#000" opacity="0.22"/>
+      <polygon points="110,20 210,60 110,100 10,60" fill="#232323" stroke="#111" stroke-width="3"/>
+      <polygon points="110,25 190,60 110,90 30,60" fill="#444" opacity="0.15"/>
+      <rect x="90" y="70" width="40" height="40" rx="10" fill="#444" stroke="#222" stroke-width="3"/>
+      <line x1="110" y1="100" x2="110" y2="128" stroke="#e6b800" stroke-width="6"/>
+      <circle cx="110" cy="128" r="10" fill="#e6b800" stroke="#bfa200" stroke-width="2"/>
+      <circle cx="110" cy="100" r="6" fill="#e6b800" stroke="#bfa200" stroke-width="2"/>
+      <line x1="110" y1="100" x2="130" y2="120" stroke="#e6b800" stroke-width="3"/>
+      <circle cx="130" cy="120" r="4" fill="#e6b800" stroke="#bfa200" stroke-width="1"/>
+    </svg>
+    <div class="graduate-name">نوران</div>
+    <div class="date">٢٥ مايو</div>
+    <div class="congrats">
+      ألف مبروك يا نوران على التخرج!<br>
+      فخور بك وبإنجازك الرائع،<br>
+      واتمنى لكِ مستقبلاً مليئاً <br>
+      بالنجاحات والسعادة. 
+      هذا التخرج مجرد بداية، واللي جاي أعظم وأجمل.✨🎓🌸
+    </div>
+    <div class="flowers-emoji">
+      <span>🌸</span><span>🌷</span><span>🌺</span><span>🌹</span><span>🌼</span>
+    </div>
+    <div class="yt-video">
+      <iframe src="https://www.youtube.com/embed/N4GUA7atTi8" allow="autoplay; encrypted-media" allowfullscreen title="أغنية التخرج"></iframe>
+    </div>
+  </div>
+  <script>
+    // ألعاب نارية تفاعلية
+    const canvas = document.querySelector('.fireworks');
+    const ctx = canvas.getContext('2d');
+    let W = window.innerWidth, H = window.innerHeight;
+    canvas.width = W; canvas.height = H;
+    window.onresize = () => { W = window.innerWidth; H = window.innerHeight; canvas.width = W; canvas.height = H; };
+
+    const colors = ['#a065c7','#f7b6d2','#ffe066','#6ec6ca','#f87c56','#fff','#e4b87a','#4f2e6d'];
+    let fireworks = [];
+    let particles = [];
+    function randomColor() {
+      return colors[Math.floor(Math.random()*colors.length)];
+    }
+    function Firework() {
+      this.x = Math.random()*W*0.8 + W*0.1;
+      this.y = H;
+      this.targetY = Math.random()*H*0.5 + H*0.1;
+      this.color = randomColor();
+      this.radius = 3;
+      this.speed = Math.random()*5+7;
+      this.exploded = false;
+    }
+    function Particle(x, y, color) {
+      this.x = x;
+      this.y = y;
+      this.radius = 2 + Math.random()*2;
+      this.color = color;
+      this.angle = Math.random()*2*Math.PI;
+      this.speed = Math.random()*7+2;
+      this.alpha = 1;
+      this.gravity = 0.04;
+    }
+    function launchFireworks() {
+      setInterval(()=>{
+        for(let i=0;i<3;i++) {
+          fireworks.push(new Firework());
+        }
+      }, 900);
+    }
+    function drawFireworks() {
+      ctx.clearRect(0,0,W,H);
+      // Draw fireworks
+      for(let i=fireworks.length-1;i>=0;i--) {
+        let f = fireworks[i];
+        ctx.beginPath();
+        ctx.arc(f.x, f.y, f.radius, 0, 2*Math.PI);
+        ctx.fillStyle = f.color;
+        ctx.fill();
+        f.y -= f.speed;
+        if(f.y <= f.targetY && !f.exploded) {
+          f.exploded = true;
+          // Create particles
+          for(let j=0;j<48;j++) {
+            particles.push(new Particle(f.x, f.y, f.color));
+          }
+          fireworks.splice(i,1);
+        }
+      }
+      // Draw particles
+      for(let i=particles.length-1;i>=0;i--) {
+        let p = particles[i];
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, 2*Math.PI);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.alpha;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+        p.x += Math.cos(p.angle)*p.speed;
+        p.y += Math.sin(p.angle)*p.speed + p.gravity;
+        p.speed *= 0.96;
+        p.alpha -= 0.012;
+        if(p.alpha <= 0) particles.splice(i,1);
+      }
+      requestAnimationFrame(drawFireworks);
+    }
+    launchFireworks();
+    drawFireworks();
+  </script>
+</body>
+</html>
